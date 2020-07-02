@@ -188,7 +188,7 @@ header {
   background-color: #F8F8F8;
 }
 
-.info__title-menu {
+.title-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,17 +242,26 @@ h3 {
   font-size: 16px;
 }
 
-.info__about {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.about__text {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.about__img {
+  margin-left: 20px;
+}
+
 @media (min-width:767px) {
-  .info__about {
+  .about {
     flex-direction: row;
   }
-  .about__text-block {
+  .about__text {
     width: 50%;
   }
   .about__img {
@@ -261,15 +270,6 @@ h3 {
 }
 
 
-
-.about__text {
-  font-size: 14px;
-}
-
-.info__row-menu {
-  overflow: auto;
-  margin-bottom: 16px;
-}
 
 .text__2, .text__3 {
   display: none;
@@ -298,6 +298,8 @@ h3 {
 .row-menu {
   display: flex;
   justify-content: space-between;
+  overflow: auto;
+  margin-bottom: 16px;
 }
 
 .row-menu__items {
