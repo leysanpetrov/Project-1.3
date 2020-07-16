@@ -32,12 +32,13 @@ body {
 
 .wrapper-menu{
   display: flex;
-  min-height: 100%;
-  overflow: hidden;
+  height: 100%;
+  overflow-y: auto;
   flex-direction: column;
   width: 320px;
   background-color: white;
   box-shadow: 15px 0 20px 40px #F2F2F2;
+
 }
 
 .container {
@@ -248,7 +249,7 @@ h1 {
 }
 .border {
   background: #41F6D7;
-  border-radius: 1px;
+  border-radius: 0 10px 10px 0;
   width: 4px;
   height: 40px;
   margin-right: 12px;
@@ -290,7 +291,6 @@ h3 {
     width: 50%;
   }
 }
-
 
 
 .text__2, .text__3 {
@@ -343,6 +343,7 @@ h3 {
   box-sizing: border-box;
   padding: 8px 16px;
   color: #1B1C21;
+  line-height: 32px;
 }
 
 .row-menu__items:first-child  {
@@ -363,13 +364,15 @@ img {
 
 .contact-icons {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 
+  align-items: center;
+}
+
+.contact-icons__items {
+  margin-right: 16px;
 }
 
 .footer {
-  margin-top: 268px;
   width: 222px;
   padding-left: 16px;
   padding-right: 16px;
@@ -382,7 +385,9 @@ img {
 
 .phone {
   font-size: 24px;
-  font-weight: bold;
+  /*font-weight: 900;*/
+  text-shadow: 2px 0;
+  letter-spacing: -0.6px;
 }
 
 .language__items {
@@ -411,4 +416,12 @@ a {
 a :hover {
   opacity: 0.7;
   transition-duration: 0.5s;
+}
+
+.language__items_ru_active {
+  color: #7E7E82;
+}
+
+.main-of-menu {
+  min-height: calc(100vh - 300px);
 }
