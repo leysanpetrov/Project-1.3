@@ -30,8 +30,18 @@ body {
   flex-direction: column;
 }
 
+.wrapper-menu{
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  width: 320px;
+  background-color: white;
+  box-shadow: 15px 0 20px 40px #F2F2F2;
+}
+
 .container {
-  min-width: 320px;
+  min-width: 280px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -48,11 +58,18 @@ body {
     min-width: 1120px;
   }
 }
-header {
+.header {
   background-color: white;
   padding-bottom: 19px;
   padding-top: 19px;
 }
+
+.header-menu {
+  background-color: white;
+  padding: 19px 16px;
+}
+
+
 .header-row {
   display: flex;
   flex-wrap:wrap;
@@ -88,6 +105,7 @@ header {
 
 .menu__logo {
   margin-right: auto;
+  margin-left: 16px;
   align-items: center;
 }
 
@@ -135,7 +153,11 @@ header {
   background-position: center;
 }
 
-
+.ellipse_icon_close {
+  background-image: url("img/close/close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media (min-width:767px) {
   .menu__block1 {
@@ -224,7 +246,7 @@ h1 {
   font-size: 28px;
   color: #1B1C21;
 }
-.title-menu__border {
+.border {
   background: #41F6D7;
   border-radius: 1px;
   width: 4px;
@@ -302,10 +324,25 @@ h3 {
   margin-bottom: 16px;
 }
 
+.row-menu-menu {
+  justify-content: space-between;
+  overflow: auto;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .row-menu__items {
   white-space: nowrap;
   box-sizing: border-box;
   padding: 8px 16px;
+}
+
+.row-menu-menu__items {
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  color: #1B1C21;
 }
 
 .row-menu__items:first-child  {
@@ -324,5 +361,54 @@ img {
   width: 100%;
 }
 
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
 
+.footer {
+  margin-top: 268px;
+  width: 222px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.language {
+  display: flex;
+  margin-top: 40px;
+}
+
+.phone {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.language__items {
+  margin-right: 7px;
+  margin-bottom: 32px;
+}
+
+.contact__items {
+  margin-top: 16px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-heading {
+  color: #7E7E82;
+}
+
+a {
+  color: #1B1C21;
+  text-decoration: none;
+}
+
+a :hover {
+  opacity: 0.7;
+  transition-duration: 0.5s;
+}
