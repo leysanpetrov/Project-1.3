@@ -9,6 +9,7 @@ body {
   margin: 0;
   min-height: 100%;
   background-color: #F8F8F8;
+  padding-bottom: 10px;
 }
 
 
@@ -436,4 +437,165 @@ a :hover {
 
 .main-of-menu__items_active {
   color: #7E7E82;
+}
+
+.brands-logo__ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #FF3E79;
+  margin-right: 16px;
+}
+
+.brands-logo__img {
+  box-sizing: border-box;
+  margin-left: 16px;
+}
+
+.brand-title {
+  display: flex;
+  height: 80px;
+  background-color: white;
+  align-items: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: darkgray;
+
+}
+
+.brands-logo {
+  display: flex;
+  background-color: white;
+  height: 72px;
+  min-width: 240px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px;
+}
+
+.arrow {
+  transform: rotate(-35deg);
+  height: 5px;
+  width: 8px;
+  position: relative;
+}
+
+.arrow-top,
+.arrow-bottom {
+  background: #FF3E79;
+  height: 3px;
+  left: -3px;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+}
+
+.arrow-top {
+  transform: rotate(70deg);
+  transform-origin: bottom right;
+}
+.arrow--bottom {
+  transform: rotate(-70deg);
+  transform-origin: top right;
+}
+
+.block-brands {
+  display: flex;
+  flex-wrap: nowrap;
+margin-top: 8px;
+}
+
+.choose {
+  display: flex;
+  margin-left: 58px;
+}
+
+.choose__ellipse {
+  background-color: darkgray;
+  border-radius: 6px;
+  width: 12px;
+  height: 12px;
+
+  margin-right: 12px;
+}
+
+@media (min-width: 767px) {
+  .block-brands {
+    flex-wrap: wrap;
+  }
+  .brands-logo {
+    margin: 12px;
+    min-width: 224px;
+  }
+}
+
+@media (min-width:1120px) {
+  .brands-logo {
+    margin: 16px;
+    min-width: 240px;
+  }
+}
+
+.seeAll {
+  display: none;
+}
+
+.seeAll__img {
+  display: flex;
+  color: #7E7E82;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close {
+  display: none;
+}
+
+.close__img {
+  display: flex;
+  color: #7E7E82;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  transform: rotate(180deg);
+}
+
+
+@media (min-width:767px) {
+  .choose {
+    display: none;
+  }
+
+  .brands-logo_display_none {
+    display: none;
+  }
+  .close {
+    display: flex;
+  }
+
+  .seeAll {
+    display: flex;
+  }
+}
+
+@media (min-width:1120px) {
+
+  .brands-logo_display_none:nth-child(8), .brands-logo_display_none:nth-child(7){
+    display: flex;
+  }
+}
+
+.seeAll_display_none {
+  display: none;
+}
+
+.close_display_none {
+  display: none;
 }
