@@ -230,6 +230,9 @@ body {
 }
 
 .onwards__img {
+  border: none;
+  outline: none;
+  background-color: transparent;
   display: flex;
   color: #7E7E82;
   align-items: center;
@@ -458,7 +461,8 @@ a :hover {
 .brand-title {
   display: flex;
   height: 80px;
-  background-color: white;
+  /*background-color: white;*/
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
   align-items: center;
 }
 
@@ -506,7 +510,7 @@ h2 {
 }
 
 .block-brands {
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
 margin-top: 8px;
 }
@@ -526,7 +530,11 @@ margin-top: 8px;
 }
 
 @media (min-width: 767px) {
+  .swiper-container {
+    display: none;
+  }
   .block-brands {
+    display: flex;
     flex-wrap: wrap;
   }
   .brands-logo {
@@ -536,6 +544,13 @@ margin-top: 8px;
 }
 
 @media (min-width:1120px) {
+  .swiper-container {
+    display: none;
+  }
+  .block-brands {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .brands-logo {
     margin: 16px;
     min-width: 240px;
@@ -547,6 +562,9 @@ margin-top: 8px;
 }
 
 .seeAll__img {
+  border: none;
+  outline: none;
+  background-color: transparent;
   display: flex;
   color: #7E7E82;
   align-items: center;
@@ -559,6 +577,9 @@ margin-top: 8px;
 }
 
 .close__img {
+  border: none;
+  outline: none;
+  background-color: transparent;
   display: flex;
   color: #7E7E82;
   align-items: center;
@@ -598,4 +619,9 @@ margin-top: 8px;
 
 .close_display_none {
   display: none;
+}
+
+.swiper-container {
+  width: 240px;
+  height: 130px;
 }
