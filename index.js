@@ -9,7 +9,7 @@ let seeAll = document.querySelector('.seeAll');
 
 
 seeAll.addEventListener('click', function () {
-  console.log(hiddenBrand);
+
   for(let i = 0; i < hiddenBrand.length; i++) {
     hiddenBrand[i].classList.remove('brands-logo_display_none');
   }
@@ -19,7 +19,6 @@ seeAll.addEventListener('click', function () {
 })
 
 close.addEventListener('click', function () {
-  console.log(hiddenBrand);
   if(window.innerWidth >= 1120) {
     for (let i = 8; i < brandsLogo.length; i++) {
       brandsLogo[i].classList.add('brands-logo_display_none');
@@ -34,6 +33,8 @@ close.addEventListener('click', function () {
   seeAll.classList.remove('seeAll_display_none');
 })
 
+
+
 var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
@@ -42,6 +43,7 @@ var mySwiper = new Swiper('.swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -55,3 +57,5 @@ var mySwiper = new Swiper('.swiper-container', {
     el: '.swiper-scrollbar',
   },
 })
+
+
