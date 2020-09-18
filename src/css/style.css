@@ -15,10 +15,10 @@ body {
 
 @font-face {
   font-family: 'TT Lakes Regular';
-  src: url('fonts/TTLakes-Regular.eot');
-  src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-  url('fonts/TTLakes-Regular.woff') format('woff'),
-  url('fonts/TTLakes-Regular.ttf') format('truetype');
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/TTLakes-Regular.woff') format('woff'),
+  url('../fonts/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -120,43 +120,43 @@ body {
 }
 
 .ellipse_icon_burger {
-  background-image: url("img/burger/burger.png");
+  background-image: url("../img/burger/burger.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_tel {
-  background-image: url("img/tel/tel.png");
+  background-image: url("../img/tel/tel.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_chat {
-  background-image: url("img/chat/chat.png");
+  background-image: url("../img/chat/chat.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_profile {
-  background-image: url("img/profile/profile.png");
+  background-image: url("../img/profile/profile.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_repair {
-  background-image: url("img/repair/repair.png");
+  background-image: url("../img/repair/repair.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_search {
-  background-image: url("img/search/search.png");
+  background-image: url("../img/search/search.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .ellipse_icon_close {
-  background-image: url("img/close/close.png");
+  background-image: url("../img/close/close.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -197,9 +197,9 @@ body {
 }
 
 @media (min-width: 1120px) {
-    .title-menu__menu {
-      display: flex;
-    }
+  .title-menu__menu {
+    display: flex;
+  }
 }
 
 .border-row {
@@ -512,7 +512,7 @@ h2 {
 .block-brands {
   display: none;
   flex-wrap: nowrap;
-margin-top: 8px;
+  margin-top: 8px;
 }
 
 .choose {
@@ -774,6 +774,8 @@ margin-top: 8px;
   width: 100%;
   margin-top: 16px;
   margin-left: 16px;
+  margin-right: 16px;
+  justify-content: space-between;
 }
 
 .swiper-pagination-3 {
@@ -806,11 +808,11 @@ margin-top: 8px;
   /*flex-wrap: nowrap;*/
 }
 
-.offer .arrow {
-  position: relative;
-  right: -111.4px;
-  bottom: 14px;
-}
+/*.offer .arrow {*/
+/*  position: relative;*/
+/*  right: -111.4px;*/
+/*  bottom: 14px;*/
+/*}*/
 
 .footer-text{
   margin-left: 16px;
@@ -851,7 +853,7 @@ margin-top: 8px;
 .price-open {
   justify-content: space-between;
   display: flex;
-  margin: 16px;
+  margin: 8px 16px 8px 16px;
 }
 
 /*.price-open__content:first-child {*/
@@ -861,10 +863,12 @@ margin-top: 8px;
 .price-open__content {
   /*margin-left: 16px;*/
   /*margin-top: 16px;*/
+  margin: auto 0;
   text-align: left;
   font-size: 14px;
   line-height: 18px;
   color: #1B1C21;
+  vertical-align: baseline;
 }
 
 .price-open__border-row {
@@ -876,11 +880,11 @@ margin-top: 8px;
 }
 
 .price-open:first-child {
-  padding-top: 23px;
+  padding-top: 16px;
 }
 
 .price-open__content:first-child {
-min-width: 348px;
+  min-width: 348px;
 }
 
 .price-open1__title:first-child {
@@ -974,7 +978,7 @@ textarea {
 }
 
 .close-icon-connection {
- padding-top: 24px;
+  padding-top: 24px;
   margin-left: 16px;
 }
 
@@ -989,31 +993,52 @@ textarea {
   color: red;
 }
 
- .button {
+.button {
   background-color: #FF3E79;
   border-radius: 16px;
   width: 136px;
   height: 32px;
   border: none;
-   color: white;
-   font-size: 12px;
-   line-height: 24px;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .buttons {
+  /*text-align: right;*/
+  /*margin-right: 16px;*/
+  /*margin-top: 23px;*/
+  /*padding-bottom: 75px;*/
+}
+
+.arrow-connection .arrow-top,
+.arrow-connection .arrow-bottom {
+  background: white;
+}
+
+.arrow-connection {
+  position: relative;
+  left: 277px;
+  bottom: 18px;
+}
+
+.buttons-connection {
   text-align: right;
   margin-right: 16px;
   margin-top: 23px;
   /*padding-bottom: 75px;*/
 }
 
-.arrow-connection .arrow-top,
-.arrow-bottom {
-  background: white;
+.bottom-in-block {
+
+
 }
 
-.arrow-connection {
- position: relative;
-  left: 277px;
-  bottom: 18px;
+.offer-text {
+
+}
+
+.price-arrow {
+  display: block;
+  float: right;
 }

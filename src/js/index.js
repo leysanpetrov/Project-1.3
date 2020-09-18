@@ -1,3 +1,7 @@
+import '../scss/style.scss';
+
+console.log('Works!');
+
 let close = document.querySelector('.close');
 let closeNone = document.querySelector('.close_display_none');
 let seeAllNone = document.querySelector('.seeAll_display_none');
